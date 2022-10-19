@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        xkcd shuffler
+    </title>
+    <link href="/static/stylesheets/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="todo-container">
+        <div class="xkcd">
+            <h2>
+                <%= comicData.safe_title %>
+            </h2>
+            <img src="<%= comicData.img %>" alt="<%= comicData.alt %>"/> <!--width="500" height="500"/>-->
+        </div>
+    </div>
+</body>
