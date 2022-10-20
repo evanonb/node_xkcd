@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
+app.use('/static', express.static("public"));
+
 app.get('/', function(req, res){
     randomizer = Math.floor(Math.random() * 100) + 1;
     axios.get('https://xkcd.com/'+randomizer+'/info.0.json').then(function(response){
